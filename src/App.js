@@ -8,7 +8,7 @@ function App() {
     //aqui va el maquetado y un poquito de logica
     <div>
       <Titulo/>
-      <Subtitulo/>
+      <Subtitulo comision='17i'/>
     </div>
   );
 }
