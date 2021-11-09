@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Titulo extends Component {
     render() {
         return (
-            <h1>Lista de tareas</h1>
+            <h1 className='text-light text-center display-3'>Lista de tareas</h1>
         );
     }
 }
