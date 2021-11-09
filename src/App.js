@@ -2,8 +2,8 @@ import './App.css';
 import Subtitulo from './components/Subtitulo';
 import Titulo from './components/Titulo';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form } from 'react-bootstrap';
 import FormTareas from './components/FormTareas';
+
 
 function App() {
   //aqui va la logica

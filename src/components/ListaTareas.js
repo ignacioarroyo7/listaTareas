@@ -2,10 +2,12 @@ import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 import ItemTarea from './ItemTarea';
 
-const ListaTareas = () => {
+const ListaTareas = (props) => {
     return (
         <ListGroup as="ul" className='container'>
-            <ItemTarea className='lead'></ItemTarea>
+            {
+                props.tareas.map((item, posicion)=><ItemTarea key={posicion} tarea={item}/>)
+            }
         </ListGroup>
     );
 };
