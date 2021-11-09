@@ -6,7 +6,8 @@ const ListaTareas = (props) => {
     return (
         <ListGroup as="ul" className='container'>
             {
-                props.tareas.map((item, posicion)=><ItemTarea key={posicion} tarea={item}/>)
+                props.tareas.map((item, posicion)=><ItemTarea key={posicion} tarea={item}
+                borrarTarea={props.borrarTarea}/>)
             }
         </ListGroup>
     );

@@ -15,6 +15,12 @@ const FormTareas = () => {
         setTareaIndividual('');
     }
 
+    const borrarTarea = (contenidoTarea)=>{
+        let arregloModificado = tareas.filter((tarea)=>tarea!=contenidoTarea);
+        console.log(arregloModificado);
+        setTareas(arregloModificado);
+    }
+
     return (
         <>
             <Form className='container' onSubmit={handleSubmit}>
@@ -29,7 +35,7 @@ const FormTareas = () => {
                 </Form.Group>
             </Form>
             <section>
-                <ListaTareas tareas={tareas}/>
+                <ListaTareas tareas={tareas} borrarTarea={borrarTarea}/>
             </section>
         </>
     );
