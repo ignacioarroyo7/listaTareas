@@ -48,7 +48,7 @@ const FormTareas = () => {
         <>
             <Form className='container' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3 d-flex">
-                    <Form.Control 
+                    <Form.Control //formcontrol es el input
                         type="text" 
                         placeholder="Ingrese una tarea" 
                         onChange={e=>setTareaIndividual(e.target.value)}
